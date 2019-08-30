@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Guess the Musical Instrument!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+
+</head>
+
+    <body>
+        <!--Main Heading-->
+        <div class="heading">
+            <h1>Musical Instruments</h1>
+        </div>
+
+        <div class="background">
+            <div class="container">
+
+                <!--Changing Image based on correct answers-->
+                <h2>Press Any Key To Guess The Word!</h2>
+                <div>
+                    <img id="image" src="assets/images/giphy.gif" width="50%" height="150">
+                </div>
+
+                <!--Current Word Container-->
+                <div>
+                    <h3 id="currentword">_ _ _ _ _</h3>
+                </div>
+                <div id="scoreboard">
+                    <!--Guesses left Container-->
+                    <div class="sidebar">
+                        <h3>GUESSES LEFT:
+                            <span id="guessesremaining"></span>
+                        </h3>
+                    </div>
+
+                    <!--Wins counter Container-->
+                    <div class="sidebar">
+                        <h3>WINS:
+                            <span id="winstracker"></span>
+                        </h3>
+                    </div>
+                    <!--Loss counter Container-->
+                    <div class="sidebar">
+                        <h3>LOSSES:
+                            <span id="losstracker"></span>
+                        </h3>
+                    </div>
+
+                    <!--Wrong guesses container-->
+                    <div class="sidebar">
+                        <h3>LETTERS YOU GUESSED WRONG:
+                            <span id="playerguesses"></span>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!--AUDIO FILES-->
+        <div>
+            <!--piano-->
+            <audio id="piano">
+                <source src="./assets/audio/piano.mp3" type="audio/mp3">
+            </audio>
+            <!--drums-->
+            <audio id="drums">
+                <source src="./assets/audio/Drums.mp3" type="audio/mp3">
+            </audio>
+            <!--guitar-->
+            <audio id="guitar">
+                <source src="./assets/audio/simpsons.mp3" type="audio/mp3">
+            </audio>
+            <!--maracas-->
+            <audio id="maracas">
+                <source src="./assets/audio/scoobydoo.mp3" type="audio/mp3">
+            </audio>
+            <!--triangle-->
+            <audio id="triangle">
+                <source src="./assets/audio/spongebob.mp3" type="audio/mp3">
+            </audio>
+            <!--trombone-->
+            <audio id="trombone">
+                <source src="./assets/audio/Sad-Trombone-A1-www.fesliyanstudios.com.mp3" type="audio/mp3">
+            </audio>
+            <!--violin-->
+            <audio id="violin">
+                <source src="./assets/audio/teentitans.mp3" type="audio/mp3">
+            </audio>
+        </div>
+
+
+
+
+        <script src="assets/javascript/game.js"></script>
+
+    </body>
+
+</html>
